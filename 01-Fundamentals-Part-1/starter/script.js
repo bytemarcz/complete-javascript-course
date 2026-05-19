@@ -190,4 +190,32 @@ if (hasDriversLicense && hasGoodVision && !isTired) {
     console.log('Someone else should drive...');
     
 }
+
+// Can also us if else if syntax but can be time consuming
+// Switch statement usually used less and less but personal preference to develop coding styles
+const day = 'thursday';
+
+switch (day) {
+    case 'monday': // day === 'monday'
+        console.log('Plan course structure');
+        console.log('Go to coding meetup');
+        break; // code will continue executing if breaks are not added. 
+    case 'tuesday':
+        console.log('Prepare theory videos');
+        break;
+    case 'wednesday':
+    case 'thursday':
+        console.log('Write code examples');
+        break;
+    case 'friday':
+        console.log('Record videos');
+        break;
+    case 'saturday':
+    case 'sunday':
+        console.log('Enjoy the weekend :D');
+        break;
+    default:
+        console.log('Not a valid day!');
+}
 */
+

@@ -1,7 +1,7 @@
 // Values and Variables Assignment
 const country = 'United States of America';
 const continent = 'North America';
-let population = 13;
+let population = 35;
 
 console.log(country);
 console.log(continent);
@@ -9,8 +9,8 @@ console.log(population);
 
 // Data Types, let, const, var
 let isIsland = false;
-language = 'American English'
-isIsland = true;
+language = 'English'
+isIsland = false;
 
 console.log(isIsland);
 console.log(language);
@@ -31,8 +31,24 @@ if (population > 33) {
     console.log(`${country}'s population is ${33 - population} million below average`);
 }
 
-console.log('9' - '5'); // -> 4
-console.log('19' - '13' + '17' ); // -> 617
-console.log('19' - '13' + 17); // -> 23
-console.log('123' < 57); // -> false
-console.log(5 + 6 + '4' + 9 - 4 - 2); // -> 1143
+// console.log('9' - '5'); // -> 4
+// console.log('19' - '13' + '17' ); // -> 617
+// console.log('19' - '13' + 17); // -> 23
+// console.log('123' < 57); // -> false
+// console.log(5 + 6 + '4' + 9 - 4 - 2); // -> 1143
+
+// const numNeighbors = Number(prompt('How many neighbour countries does your country have?'));
+
+// if (numNeighbors === 1) {
+//     console.log('Only 1 border');
+// } else if (numNeighbors > 1) {
+//     console.log('More than 1 border');
+// } else {
+//     console.log('No borders');
+// }
+
+if (language === 'English' && population < 50 && !isIsland) {
+    console.log(`You should live in ${country} :)`);
+} else {
+    console.log(`${country} does not meet your criteria :(`);
+}
