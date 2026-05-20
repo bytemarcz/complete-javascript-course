@@ -1,7 +1,7 @@
 // Values and Variables Assignment
 const country = 'United States of America';
 const continent = 'North America';
-let population = 35;
+let population = 34;
 
 console.log(country);
 console.log(continent);
@@ -74,3 +74,5 @@ switch (language) {
         console.log('Great language too :D');
 }
 
+// population > 33 ? console.log("Portugal's population is above average") : console.log("Portugal's population is below average");
+console.log(`${country}'s population is ${population > 33 ? 'above' : 'below'} average`);
