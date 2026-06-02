@@ -60,7 +60,7 @@ const yearsUntilRetirement = (birthYear, firstName) => {
 }
 console.log(yearsUntilRetirement(1980, 'Scott'));
 console.log(yearsUntilRetirement(1994, 'Mario'));
-*/
+
 // function cutFruitPieces(fruit) {
 //     return fruit * 4;
 // }
@@ -95,3 +95,19 @@ const yearsUntilRetirement = function (birthYear, firstName) {
 }
 console.log(yearsUntilRetirement(1994, 'Mario'));
 console.log(yearsUntilRetirement(1950, 'Mike'));
+*/
+
+// Arrays in JS - A Big contiainer of iteams that we can reference and stored some place. This is a data structure. 
+// Arrays and objects are two of the most important DS
+const friend1 = 'Michael';
+const friend2 = 'Steven';
+const friend3 = 'Peter';
+
+const friends = ['Michael', 'Steven', 'Peter'];
+console.log(friends);
+
+const years = new Array(1991, 1984, 2008, 2020);
+console.log(years)
+
+console.log(friends[0]);
+console.log(friends[2]);
