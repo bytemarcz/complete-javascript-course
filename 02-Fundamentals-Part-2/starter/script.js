@@ -95,7 +95,7 @@ const yearsUntilRetirement = function (birthYear, firstName) {
 }
 console.log(yearsUntilRetirement(1994, 'Mario'));
 console.log(yearsUntilRetirement(1950, 'Mike'));
-*/
+
 
 // Arrays in JS - A Big contiainer of iteams that we can reference and stored some place. This is a data structure. 
 // Arrays and objects are two of the most important DS
@@ -106,8 +106,8 @@ const friend3 = 'Peter';
 const friends = ['Michael', 'Steven', 'Peter'];
 console.log(friends);
 
-const years = new Array(1991, 1984, 2008, 2020);
-console.log(years)
+const y = new Array(1991, 1984, 2008, 2020);
+console.log(y)
 
 console.log(friends[0]);
 console.log(friends[2]);
@@ -115,7 +115,41 @@ console.log(friends[2]);
 console.log(friends.length);
 console.log(friends[friends.length - 1 ]);
 
-friends[2] = 'Jay';
+friends[2] = 'Jay'; // array in not immutable type like primitives 
 console.log(friends);
 // friends = ['Bob', 'Alice'] - this doesn't work
 
+const firstName = 'Mario';
+const mario = ['Mario', 'Zamora', 2037 - 1994,
+    'teacher', friends];
+console.log(mario);
+console.log(mario.length);
+
+// Expression and expression produces values 
+const calcAge = function (birthYear) {
+    return 2026 - birthYear;
+}
+const years = [1990, 1967, 2002, 2010, 2018];
+
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+const age3 = calcAge(years[years.length - 1]);
+console.log(age1, age2, age3);
+
+const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
+console.log(ages);
+*/
+
+const friends = ['Michael', 'Steven', 'Peter'];
+
+// Add elements 
+const newLength = friends.push('TJ');
+console.log(friends);
+console.log(newLength);
+
+friends.unshift('John');
+console.log(friends);
+
+// Remove elements
+friends.pop(); // last element removed
+console.log(friends);
