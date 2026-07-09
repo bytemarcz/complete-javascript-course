@@ -157,11 +157,6 @@ console.log(popped);
 console.log(friends);
 
 friends.shift(); // first
-const popped = friends.pop(); 
-console.log(popped);
-console.log(friends);
-
-friends.shift(); // first
 console.log(friends);
 
 friends.push(23);
@@ -172,22 +167,28 @@ console.log(friends.includes(23));
 if (friends.includes('Steven')) {
     console.log('You have a friend called Peter');
 }
+
+// const bills = [125, 555, 44];
+// const tips = [];
+// const totals = [];
+// function calcTip(amount) {
+  
+//     if (amount >= 50 && amount <=300) {
+//         const tip_amount = amount * 0.15;
+//         return tip_amount;
+//     }
+//     else {
+//         const tip_amount = amount * 0.20;
+//         return tip_amount;
+//     }
+// }
+
+// for (let index = 0; index < bills.length; index++) {
+//     const add_tip = calcTip(bills[index]);
+//     const total = bills[index] + add_tip;
+//     tips.push(add_tip);
+//     totals.push(total);
+// }
+// console.log(tips);
+// console.log(totals);
 */
-function calcTip(amount) {
-    if (amount >= 50 && amount <=300) {
-    const tip_amount = amount * 0.15;
-    return tip_amount
-    }
-    else {
-        const tip_amount = amount * 0.20;
-        return tip_amount
-    }
-
-}
-
-const bills = [125, 555, 44];
-
-for (let index = 0; index < bills.length; index++) {
-    const tip = console.log(calcTip(bills[index]));
-    tips.push(tip)
-}
