@@ -192,3 +192,19 @@ if (friends.includes('Steven')) {
 // console.log(tips);
 // console.log(totals);
 */
+
+const marioArray = [
+    'Mario',
+    'Zamora',
+    2070 - 1994,
+    'Engineer',
+    ['Cody', 'Fav', 'Mario']
+];
+
+const mario = { // use curly braces to define new objects
+    firstName: 'Mario',
+    lastName: 'Zamora',
+    age: 2070 - 1994,
+    job: 'Engineer',
+    friends: ['Cody', 'Fav', 'Mario']
+}; // object literal syntax and can be used to group different types of variables 
