@@ -191,7 +191,7 @@ if (friends.includes('Steven')) {
 // }
 // console.log(tips);
 // console.log(totals);
-*/
+
 
 const marioArray = [
     'Mario',
@@ -208,3 +208,29 @@ const mario = { // use curly braces to define new objects
     job: 'Engineer',
     friends: ['Cody', 'Fav', 'Mario']
 }; // object literal syntax and can be used to group different types of variables 
+console.log(mario)
+console.log(mario['lastName']);
+
+const nameKey = 'Name';
+console.log(mario['first' + nameKey]);
+console.log(mario['last' + nameKey]);
+
+const interestedIn = prompt('What do you want to know about Mario? Choose between firstName, lastName, age, job, and friends');
+console.log(mario[interestedIn]);
+
+if (mario[interestedIn]) {
+    console.log(mario[interestedIn]);
+} else {
+    console.log('Wrong request! Choose between firstName, lastName, age, job, and friends');
+}
+
+mario.location = 'Colorado';
+mario['twitter'] = '@mariozamora';
+console.log(mario);
+
+// Challenge
+// "Mario has 3 friends, and his best firned is called Cody"
+// Hint multiple dots to get all of the friends.
+console.log(`${mario.firstName} has ${mario.friends.length} friends, and his best friend is called ${mario.friends[0]}`);
+*/
+
