@@ -234,3 +234,36 @@ console.log(mario);
 console.log(`${mario.firstName} has ${mario.friends.length} friends, and his best friend is called ${mario.friends[0]}`);
 */
 
+const mario = { // use curly braces to define new objects
+    firstName: 'Mario',
+    lastName: 'Zamora',
+    birthYear: 1994,
+    job: 'Engineer',
+    friends: ['Cody', 'Fav', 'Mario'],
+    hasDriversLicense: true,
+
+    // calcAge: function (birthYear) {
+    //     return 2037 - birthYear
+    // }
+
+    // calcAge: function () {
+    // // console.log(this);
+    // return 2037 - this.birthYear;
+    // }
+
+    calcAge: function () {
+    this.age = 2037 - this.birthYear;
+    return this.age;
+    }
+}; // object literal syntax and can be used to group different
+
+console.log(mario.calcAge());
+
+// console.log(mario['calcAge'](1994));
+
+console.log(mario.age);
+console.log(mario.age);
+console.log(mario.age);
+
+// Challenge
+// "Mario is a 43-year old engineer, and he has a/no driver's license"
